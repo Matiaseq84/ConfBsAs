@@ -1,0 +1,240 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+h6, h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bg-yellow {
+    background-color: #fcba03;
+}
+
+.bg-cyan {
+    background-color: #2aa6db;
+    color: #fff;
+}
+
+.bg-grey {
+    background-color: #4d5252;
+    color: #fff;
+}
+
+.bg-red {
+    background-color: #eb1c05;
+    color: #fff;
+}
+
+.bg-green {
+    background-color: #16e02e;
+}
+
+.btn {
+    border-radius: 1rem;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0.75rem;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: 88vh;
+    background-image: linear-gradient( rgba(0, 0 , 0, .6), rgba(0,0,0, 0.6)), url('../assets/ba1.jpg');
+    background-size: cover;
+    background-position: 0 50%;
+    margin-bottom: 1.2rem;
+}
+
+.hero-content {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+
+.hero-content-header {
+    margin: 0%;
+}
+
+.hero-content-p {
+    margin: 1.2rem 0;
+}
+
+.btn-hero-1 {
+    margin-right: 00.75rem;
+    font-weight: bold;
+}
+
+.btn-hero-2 {
+    background-color: green;
+    border: none;
+    font-weight: bold;
+}
+
+.oradores-container {
+    max-width: 80%;
+    margin: 1.1rem auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 2rem;
+}
+
+.orador {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 100%;
+    border: 0.5px solid #000;
+}
+
+.orador img {
+    width: 100%;
+    height: 60%;   
+}
+
+.orador-content {
+    padding: 1.5rem;
+}
+
+.orador-span {
+    padding: 0.2rem 0.3rem;
+    border-radius: 0.4rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-right: 0.2rem;
+}
+
+.orador-content p {
+    margin-top: 1rem;
+}
+
+.hawaii-bsas {
+    margin-bottom: 2rem;
+}
+
+.hawaii-bsas-container img {
+    width: 100%;    
+}
+
+.hawaii-bsas-description {
+    text-align: center;
+    padding: 1rem;   
+}
+
+.form h5 {
+    text-align: center;
+    margin: 0 1rem;
+}
+
+form * {
+    margin-bottom: 1rem;
+}
+
+.form-container {
+    width: 85%;
+    margin: 2rem auto;
+}
+
+form input {
+    width: 100%;   
+}
+
+form textarea {
+   display: block; 
+   width: 100%;
+}
+
+form small {
+    display: block;
+}
+
+footer {
+    background: linear-gradient(90deg, rgba(28,54,67,1) 0%, rgba(29,69,91,1) 50%, rgba(30,82,113,1) 100%);
+    padding: 2rem;
+}
+
+ul {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    
+    padding: 0;
+}
+
+footer li {
+    list-style-type: none;
+    padding: 0.3rem;
+    margin-left: 1rem 1rem;
+    color: #fff;
+    align-self: center;
+
+}
+
+@media screen and (min-width: 941px) and (max-width: 1400px) {
+    .hero-content {
+        align-items: flex-end;
+    }
+
+    .hero-content-p {
+        width: 45%;
+        text-align: right;
+    }
+
+    .oradores-container {
+        grid-template-columns: repeat(3, auto);
+        column-gap: 2rem;
+    }
+
+    .hawaii-bsas-container {
+        display: flex;
+
+    }
+
+    .hawaii-bsas-container img {
+        width: 50%;
+    }
+
+    .hawaii-bsas-description {
+        text-align: left;
+    }
+
+    form input[type='text']{
+        width: 45%;
+    }
+
+    .form-container {
+        width: 35%;
+    }
+
+    .form-inputs-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    form textarea {
+        padding: 0.8rem;
+        font-size: 1.2rem;
+        resize: none;
+    }
+
+}
