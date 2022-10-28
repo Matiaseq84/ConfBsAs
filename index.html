@@ -35,14 +35,13 @@
                             <a class="nav-link" aria-current="page" href="#">Conviértete en orador</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Conviértete en orador</a>
+                            <a class="nav-link green" aria-current="page" href="#form-tickets">Comprar Tickets</a>
                         </li>
 
                     </ul>
                 </div>
             </div>
-        </nav>
-        
+        </nav>        
     </header>
     <section class="hero-image">
         <div class="hero-content">
@@ -121,9 +120,53 @@
                     
                     <textarea cols="20" rows="7" placeholder="¿Sobre qué quieres hablar?"></textarea>
                     <small>Recuerda incluir un título para tu charla</small>
-                    <input class="btn bg-green" type="submit" value="Enviar">
+                    <input class="btn bg-green" type="button" value="Enviar">
                 </form>   
             </div>
+        </section>
+        <section id="form-tickets" class="tickets ">
+            <div class="tickets-cards-content">
+                <div class="tickets-card">
+                    <h3>Estudiante</h3>
+                    <p>Tienen un descuento</p>
+                    <p>80%</p>
+                    <p>*presentar documentación</p>
+                </div>
+                <div class="tickets-card">
+                    <h3>Trainee</h3>
+                    <p>Tienen un descuento</p>
+                    <p>50%</p>
+                    <p>*presentar documentación</p>
+                </div>
+                <div class="tickets-card">
+                    <h3>Junior</h3>
+                    <p>Tienen un descuento</p>
+                    <p>15%</p>
+                    <p>*presentar documentación</p>
+                </div>
+            </div>
+            <div class="tickets-form" >
+                <h6>VENTA</h6>
+                <h2>VALOR DEL TICKET $200</h2>
+                <form id="tickets" class="tickets-form-content">
+                    <input type="text" name="nombre" placeholder="nombre" title="No se puede " required>
+                    <input type="text" name="apellido" placeholder="apellido" required>
+                    <input type="email" name="correo" placeholder="correo" required>
+                    <label for="cantidad">Cantidad</label>
+                    <label for="categoria">Categoría</label>
+                    <input type="number" name="cantidad" placeholder="cantidad" id="cantidad" required>
+                    <select id="categoria" name="categoria" required>
+                        <option value="">Seleccione</option>
+                        <option value="Estudiante">Estudiante</option>
+                        <option value="Trainee">Trainee</option>
+                        <option value="Junior">Junior</option>
+                    </select>
+                    <div class="total"><p>Total a pagar: $<span></span></p> </div>
+                    <input type="reset" value="Borrar" class="btn bg-green">
+                    <input type="submit" value="Resumen" class="btn bg-green">
+                </form>    
+            </div>
+
         </section>
     </main>
     <footer>
@@ -138,5 +181,6 @@
         </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
